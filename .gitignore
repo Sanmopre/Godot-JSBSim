@@ -1,0 +1,36 @@
+# Scons build system
+.scons_option_cache
+.sconsign.dblite
+build/
+dist/
+
+# C++ compiled objects
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.os
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# OS specific
+Thumbs.db
+.DS_Store

@@ -1,0 +1,6 @@
+[submodule "submodules/godot-cpp"]
+	path = submodules/godot-cpp
+	url = https://github.com/godotengine/godot-cpp.git
+[submodule "submodules/jsbsim"]
+	path = submodules/jsbsim
+	url = https://github.com/JSBSim-Team/jsbsim.git
