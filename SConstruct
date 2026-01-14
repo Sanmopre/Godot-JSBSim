@@ -21,7 +21,7 @@ if env["platform"] == "macos":
     )
 else:
     library = env.SharedLibrary(
-        "/home/sanmopre/development/godot_project/bin/libgdexample{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
+        "/home/sanmopre/development/godot_project/bin/lib-JSBSim{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
         source=sources,
     )
 
