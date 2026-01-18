@@ -41,6 +41,24 @@ public:
 	[[nodiscard]] double getSimulationHertz() const noexcept;
 	void setSimulationHertz(const double& simulationHertz) noexcept;
 
+	[[nodiscard]] double getAileronCommand() const noexcept;
+	void setAileronCommand(const double& command) noexcept;
+
+	[[nodiscard]] double getElevatorCommand() const noexcept;
+	void setElevatorCommand(const double& command) noexcept;
+
+	[[nodiscard]] double getRudderCommand() const noexcept;
+	void setRudderCommand(const double& command) noexcept;
+
+	[[nodiscard]] double getThrottleCommand() const noexcept;
+	void setThrottleCommand(const double& command) noexcept;
+
+	[[nodiscard]] double getYOffset() const noexcept;
+	void setYOffset(const double& yOffset) noexcept;
+
+	[[nodiscard]] double getTerrainElevationMeters() const noexcept;
+	void setTerrainElevationMeters(const double& elevationMeters) noexcept;
+
 private:
 	// JSBSim properties
     JSBSim::FGFDMExec fdm;
@@ -49,15 +67,24 @@ private:
 	String rootDir;
 	String aircraft;
 	double simulationHertz;
+	double yOffset;
+
+private:
+	// Controls
+	double comandedAileron = 0.0;
+	double commandedElevator = 0.0;
+	double commandedRudder = 0.0;
+	double commandedThrottle = 0.0;
 
 private:
 	bool origin_set = false;
-
 	double lat0 = 0.0;
 	double lon0 = 0.0;
 	double h0   = 0.0;
-
 	Vec3d ecef0;
+
+private:
+	double terrainElevationMeters = 0.0;
 };
 
 }
